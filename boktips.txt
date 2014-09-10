@@ -1,0 +1,12 @@
+Lippman Bästa förstaboken.
+Effective C++
+Stroustrups bok.
+OpenGL Red book/Orange book
+
+Webbreferenser
+http://www.cplusplus.com/
+http://en.cppreference.com/w/
+http://msdn.microsoft.com/
+
+Superöverkurs
+Läs standarden!
