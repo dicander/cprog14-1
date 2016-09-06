@@ -30,7 +30,7 @@ void primitive(){
 }
 
 void advanced(){
-    std::vector<int> v{11, 12, 13, 14};//
+    vector<int> v{11, 12, 13, 14};//
     vector<int> my_vector;
     for(int& current: v){
         cout << current << " ";

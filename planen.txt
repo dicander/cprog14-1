@@ -1,0 +1,5 @@
+Välkomna till första övningen i C++
+1. Pekare, minneshantering, fungerar
+2. Metodanrop, funktioner och parametrar
+3. Klasser, metodanrop, Rule of Three
+4. Arv, virtual

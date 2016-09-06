@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     const int a = 1;
-    //++a;
+    ++a;
     //const_pointers.cpp:18:7: error: increment of read-only variable ‘a’    
     const int* b = new int(2);
     b++; //Compiles, but points where?
