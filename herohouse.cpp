@@ -12,10 +12,10 @@ struct hero {
     hero(const string& name, house* home)
         :name(name), home(home) {}
 
-	void write_code() const {}
-	//virtual ~hero() {
-	//	delete this->home;
-	//}
+    void write_code() const {}
+    virtual ~hero() {
+        //delete this->home;
+    }
 };
 
 
@@ -27,13 +27,12 @@ struct house {
             this->resident=new hero(hero_name, this);
     }
     virtual ~house(){
-        //delete this->resident;
+        delete this->resident;
     }
 };
 
 
 int main(){
     house h("Villa Villerkulla", "Pippi");
-    cout << h.resident->name << " bor i " << h.name << "." << endl;
-    
+    cout << h.resident->name << " bor i " << h.name << "." << endl;  
 }

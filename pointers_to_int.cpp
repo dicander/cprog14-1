@@ -19,7 +19,7 @@ void primitive(){
     int* b = new int(2);
     cout << " b = " << b << " &b = " << (&b) << " *b = " << *b << endl;
     int* c = new int[ARRAY_SIZE]{3,4,5,6};
-	print_values(c, &c[ARRAY_SIZE]);
+    print_values(c, &c[ARRAY_SIZE]);
     int d[ARRAY_SIZE]{7,8,9,10}; //int d[ARRAY_SIZE]={7,8,9,10};
     for(int i=0; i<ARRAY_SIZE; ++i){
         cout << d[i] << " ";
@@ -30,7 +30,7 @@ void primitive(){
 }
 
 void advanced(){
-    vector<int> v{11, 12, 13, 14};//
+    vector<int> v{11, 12, 13, 14};
     vector<int> my_vector;
     for(int& current: v){
         cout << current << " ";
