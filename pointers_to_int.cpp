@@ -1,11 +1,14 @@
 #include <iostream>
 #include <vector>
+
+
 using namespace std;
+
 static const int ARRAY_SIZE = 4;
 
 template<typename It>
 void print_values(It begin, It end){
-	for(auto current = begin; current!= end; ++current){
+	for(auto current = begin; current != end; ++current){
 		cout << *current << " ";	
 	}
 	cout << endl;
@@ -21,7 +24,7 @@ void primitive(){
     int* c = new int[ARRAY_SIZE]{3,4,5,6};
     print_values(c, &c[ARRAY_SIZE]);
     int d[ARRAY_SIZE]{7,8,9,10}; //int d[ARRAY_SIZE]={7,8,9,10};
-    for(int i=0; i<ARRAY_SIZE; ++i){
+    for(int i = 0; i < ARRAY_SIZE; ++i){
         cout << d[i] << " ";
     }
     cout << endl; 
@@ -32,11 +35,14 @@ void primitive(){
 void advanced(){
     vector<int> v{11, 12, 13, 14};
     vector<int> my_vector;
+    for(int i = 15; i < 15+ARRAY_SIZE; ++i) {
+        my_vector.push_back(i);
+    }
     for(int& current: v){
         cout << current << " ";
     }
     cout << endl;
-    print_values(v.begin(), v.end());
+    print_values(my_vector.begin(), my_vector.end());
     cout << " &v = " << &v << " &v[0] = " << &v[0] << endl;
 }
 
