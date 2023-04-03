@@ -1,0 +1,1 @@
+g++ -fsanitize=leak,undefined,address herohouseleaking.cpp && ./a.out
