@@ -23,8 +23,8 @@ struct house {
     string name;
     hero* resident;
     house(const string& house_name, const string& hero_name)
-        :name(house_name){
-            this->resident=new hero(hero_name, this);
+        :name(house_name), resident(new hero(hero_name, this)) {
+           // this->resident=new hero(hero_name, this);
     }
     virtual ~house(){
         delete this->resident;

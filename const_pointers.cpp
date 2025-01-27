@@ -3,10 +3,10 @@
 using namespace std;
 
 int main(){
-    int const a = 1;
+    const int a = 1;
     //++a;
     //const_pointers.cpp:18:7: error: increment of read-only variable ‘a’    
-    int const * b = new int(2);
+    const int * b = new int(2);
     b++; //Compiles, but points where?
     b--; //Compiles and ensures that b does not crash
     // *b=3;
